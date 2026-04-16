@@ -75,9 +75,13 @@ const canvas = document.getElementById('bg');
 
   animate();
 
+  let resizeTimeout;
   window.addEventListener('resize', () => {
-    resizeCanvas();
-    initParticles(); // important
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+      resizeCanvas();
+      initParticles();
+    }, 100);
   });
 
   const observer = new IntersectionObserver(

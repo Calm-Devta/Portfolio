@@ -36,6 +36,11 @@
       z-index: 5;
       position: relative;
     }
+
+    .intro-modern {
+      padding-left: 40px;
+      text-align: left;
+    }
     header h1 {
       font-size: 3rem;
       margin-bottom: 10px;
@@ -166,32 +171,7 @@
       0% { transform: translateX(100%); }
       100% { transform: translateX(-100%); }
     }
-    .collab-wrapper {
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  position: relative;
-}
-
-.collab-logos {
-  display: flex;
-  gap: 80px;
-  animation: scroll-left 20s linear infinite;
-  align-items: center;
-}
-
-.collab-logos img {
-  height: 80px;
-  filter: grayscale(100%) brightness(0) invert(1);
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.collab-logos img:hover {
-  transform: scale(1.1);
-  filter: grayscale(0%) brightness(1) invert(0);
-}
+/* collab-logos already defined above, this is duplicate - removed */
 
 .logo-bot {
   height: 90px;
