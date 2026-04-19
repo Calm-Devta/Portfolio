@@ -1,9 +1,8 @@
-const canvas = document.getElementById('bg');
-  if (!canvas) {
+const canvas = document.getElementById("bg");
+if (!canvas) {
   console.error("Canvas not found");
 } else {
-
-  const ctx = canvas.getContext('2d');
+  const ctx = canvas.getContext("2d");
 
   function resizeCanvas() {
     canvas.width = window.innerWidth;
@@ -31,20 +30,20 @@ const canvas = document.getElementById('bg');
 
   const spotlight = { x: 0, y: 0 };
 
-  canvas.addEventListener('mousemove', (e) => {
+  canvas.addEventListener("mousemove", (e) => {
     spotlight.x = e.clientX;
     spotlight.y = e.clientY;
   });
 
   function animate() {
-    ctx.fillStyle = 'rgba(14, 14, 14, 0.4)';
+    ctx.fillStyle = "rgba(14, 14, 14, 0.4)";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     // particles
     for (let p of particles) {
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = '#fff';
+      ctx.fillStyle = "#fff";
       ctx.fill();
 
       p.x += p.dx;
@@ -61,11 +60,11 @@ const canvas = document.getElementById('bg');
       0,
       spotlight.x,
       spotlight.y,
-      120
+      120,
     );
 
-    gradient.addColorStop(0, 'rgba(255,255,255,0.1)');
-    gradient.addColorStop(1, 'transparent');
+    gradient.addColorStop(0, "rgba(255,255,255,0.1)");
+    gradient.addColorStop(1, "transparent");
 
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -76,7 +75,7 @@ const canvas = document.getElementById('bg');
   animate();
 
   let resizeTimeout;
-  window.addEventListener('resize', () => {
+  window.addEventListener("resize", () => {
     clearTimeout(resizeTimeout);
     resizeTimeout = setTimeout(() => {
       resizeCanvas();
@@ -87,35 +86,35 @@ const canvas = document.getElementById('bg');
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        const id = entry.target.getAttribute('id');
+        const id = entry.target.getAttribute("id");
         const dot = document.querySelector(
-          `.sidebar .dot[data-target="${id}"]`
+          `.sidebar .dot[data-target="${id}"]`,
         );
 
         if (entry.isIntersecting && dot) {
           document
-            .querySelectorAll('.sidebar .dot')
-            .forEach((d) => d.classList.remove('active'));
+            .querySelectorAll(".sidebar .dot")
+            .forEach((d) => d.classList.remove("active"));
 
-          dot.classList.add('active');
+          dot.classList.add("active");
         }
       });
     },
     {
       threshold: 0.3,
-    }
+    },
   );
 
-  document.querySelectorAll('header, section').forEach((section) => {
+  document.querySelectorAll("header, section").forEach((section) => {
     observer.observe(section);
   });
 
   // sidebar click scroll (you were missing this)
-  document.querySelectorAll('.dot').forEach((dot) => {
-    dot.addEventListener('click', () => {
+  document.querySelectorAll(".dot").forEach((dot) => {
+    dot.addEventListener("click", () => {
       const target = document.getElementById(dot.dataset.target);
       if (target) {
-        target.scrollIntoView({ behavior: 'smooth' });
+        target.scrollIntoView({ behavior: "smooth" });
       }
     });
   });

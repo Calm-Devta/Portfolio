@@ -1,114 +1,217 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shashank Mishra | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <canvas id="bg"></canvas>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shashank Mishra | Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="bg"></canvas>
 
-  <div class="sidebar">
-    <div class="dot" data-target="header"></div>
-    <div class="dot" data-target="projects"></div>
-    <div class="dot" data-target="journey"></div>
-    <div class="dot" data-target="collaborations"></div>
-    <div class="dot" data-target="contact"></div>
-  </div>
-
-  <header id="header">
-    <div class="intro-text intro-modern">
-      <h1>Shashank Mishra</h1>
-      <p>Storyteller • Video Editor • Brand Builder</p>
-      <button class="btn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Let’s Work Together</button>
+    <div class="sidebar">
+      <div class="dot" data-target="header"></div>
+      <div class="dot" data-target="projects"></div>
+      <div class="dot" data-target="journey"></div>
+      <div class="dot" data-target="collaborations"></div>
+      <div class="dot" data-target="contact"></div>
     </div>
-    <div class="profile-img">
-      <img src="/main_photo/2025_05_12_at_15_05_51_3c265cba.jpg" alt="Shashank Mishra" loading="lazy">
-    </div>
-  </header>
 
-  <section id="projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="scroll-projects">
-      <div class="card" onclick="window.open('https://www.instagram.com/p/DIgAMhXxcsc/', '_blank')">
-  <img src="/thumbnails/Screenshot_2025_05_12_194238.png" alt="To code or not to code?" class="card-img" loading="lazy" />
-</div>
-      <div class="card" onclick="window.open('https://www.instagram.com/reel/DH5Yv0YT8hw/', '_blank')">
-  <img src="/thumbnails/what_modern_women_want.jpg" alt="What modern women want" class="card-img" loading="lazy" />
-</div>
-      <div class="card" onclick="window.open('https://www.instagram.com/maakhana.india/', '_blank')">
-  <!-- Image will be added later -->
-</div> 
-      <div class="card" onclick="window.open('https://www.google.com', '_blank')"></div>
-      <div class="card" onclick="window.open('https://www.google.com', '_blank')"></div>
-    </div>
-  </section>
+    <header id="header">
+      <div class="intro-text intro-modern">
+        <h1>Shashank Mishra</h1>
+        <p>Storyteller • Video Editor • Brand Builder</p>
+        <button
+          class="btn"
+          onclick="
+            document
+              .getElementById('contact')
+              .scrollIntoView({ behavior: 'smooth' })
+          "
+        >
+          Let’s Work Together
+        </button>
+      </div>
+      <div class="profile-img">
+        <img
+          src="/main_photo/2025_05_12_at_15_05_51_3c265cba.jpg"
+          alt="Shashank Mishra"
+          loading="lazy"
+        />
+      </div>
+    </header>
 
-  <section id="journey">
-    <h2 class="section-title">Professional Journey</h2>
-    <div class="journey-list">
-      <div class="journey">
-        <h3>Maakhana</h3>
-        <p>I joined Maakhana when it was just getting started. I led content creation from scratch, growing the brand to <strong>80K+ impressions in just 2 weeks</strong> organically.</p>
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="scroll-projects">
+        <div
+          class="card"
+          onclick="
+            window.open('https://www.instagram.com/p/DIgAMhXxcsc/', '_blank')
+          "
+        >
+          <img
+            src="/thumbnails/Screenshot_2025_05_12_194238.png"
+            alt="To code or not to code?"
+            class="card-img"
+            loading="lazy"
+          />
+        </div>
+        <div
+          class="card"
+          onclick="
+            window.open('https://www.instagram.com/reel/DH5Yv0YT8hw/', '_blank')
+          "
+        >
+          <img
+            src="/thumbnails/what_modern_women_want.jpg"
+            alt="What modern women want"
+            class="card-img"
+            loading="lazy"
+          />
+        </div>
+        <div
+          class="card"
+          onclick="
+            window.open('https://www.instagram.com/reel/DQeg8KCEtxa/', '_blank')
+          "
+        >
+          <img
+            src="/thumbnails/Snooze_thumbnail_1.jpg"
+            alt="Snooze"
+            class="card-img"
+            loading="lazy"
+          />
+        </div>
+        <div
+          class="card"
+          onclick="
+            window.open('https://www.instagram.com/maakhana.india/', '_blank')
+          "
+        >
+          <img
+            src="/thumbnails/maakhan_thumbnail.png"
+            alt="Maakhana"
+            class="card-img"
+            loading="lazy"
+          />
+        </div>
+        <div
+          class="card"
+          onclick="window.open('https://www.google.com', '_blank')"
+        ></div>
       </div>
-      <div class="journey">
-        <h3>Regrip</h3>
-        <p>At Regrip, I worked on content creation and scripting to simplify technical offerings for their logistics clients. My work helped convey brand clarity through video and visuals.</p>
-      </div>
-      <div class="journey">
-        <h3>Brands of Tomorrow (JioHotstar)</h3>
-        <p>I edited social media reels and short videos for their Instagram, helping drive <strong>millions of views</strong> across founder spotlight content on a national platform.</p>
-      </div>
-      <div class="journey">
-        <h3>JIC Foundation</h3>
-        <p>JIC was my learning ground. I learnt scripting, speaking in front of a camera, and shot my early content there. My videos still feature on their official Instagram today.</p>
-      </div>
-    </div>
-  </section>
-  
+    </section>
 
-  <section id="collaborations">
+    <section id="journey">
+      <h2 class="section-title">Professional Journey</h2>
+      <div class="journey-list">
+        <div class="journey">
+          <h3>Maakhana</h3>
+          <p>
+            I joined Maakhana when it was just getting started. I led content
+            creation from scratch, growing the brand to
+            <strong>80K+ impressions in just 2 weeks</strong> organically.
+          </p>
+        </div>
+        <div class="journey">
+          <h3>Regrip</h3>
+          <p>
+            At Regrip, I worked on content creation and scripting to simplify
+            technical offerings for their logistics clients. My work helped
+            convey brand clarity through video and visuals.
+          </p>
+        </div>
+        <div class="journey">
+          <h3>Brands of Tomorrow (JioHotstar)</h3>
+          <p>
+            I edited social media reels and short videos for their Instagram,
+            helping drive <strong>millions of views</strong> across founder
+            spotlight content on a national platform.
+          </p>
+        </div>
+        <div class="journey">
+          <h3>JIC Foundation</h3>
+          <p>
+            JIC was my learning ground. I learnt scripting, speaking in front of
+            a camera, and shot my early content there. My videos still feature
+            on their official Instagram today.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="collaborations">
     <h2 class="section-title">Collaborations</h2>
     <div class="collab-wrapper">
       <div class="collab-logos">
         <img src="/brands_logo/JIC_F_logo.png" alt="JIC Foundation" loading="lazy" />
-        <img src="/brands_logo/Untitled_design.png" alt="Brands of Tomorrow (JioHotstar)" class="logo-bot" loading="lazy" />
+        <img src="/brands_logo/Untitled_design.png" alt="Brands of Tomorrow (JioHotstar)" loading="lazy" />
         <img src="/brands_logo/Regrip_logo_1.png" alt="Regrip" loading="lazy" />
+        <img src="/brands_logo/Shaarp.png" alt="Shaarp" loading="lazy" />
+        <img src="/brands_logo/Snooze logo.png" alt="Snooze" loading="lazy" />
         <!-- Add this later -->
-        <!-- <img src="maakhana-logo.png" alt="Maakhana" /> -->
+    <!-- <img src="maakhana-logo.png" alt="Maakhana" /> -->
+    <!-- </div>
+    </div>
+  </section> -->
+    <section id="collaborations">
+      <h2 class="section-title">Collaborations</h2>
+      <div class="collab-wrapper">
+        <div class="collab-logos">
+          <img
+            src="/brands_logo/Untitled design/JIC_F_logo.png"
+            alt="JIC Foundation"
+            loading="lazy"
+          />
+          <img
+            src="/brands_logo/Untitled design/JioHotstar_logo.png"
+            alt="Brands of Tomorrow (JioHotstar)"
+            loading="lazy"
+          />
+          <img
+            src="/brands_logo/Untitled design/Regrip_logo.png"
+            alt="Regrip"
+            loading="lazy"
+          />
+          <img src="/brands_logo/Shaarp.png" alt="Shaarp" loading="lazy" />
+          <img
+            src="/brands_logo/Untitled design/Snooze_logo.png"
+            alt="Snooze"
+            loading="lazy"
+          />
+          <!-- Add this later -->
+          <!-- <img src="maakhana-logo.png" alt="Maakhana" /> -->
+        </div>
       </div>
-    </div>
-  </section>
-  
+    </section>
 
-<section id="contact">
-  <h2 class="section-title">Contact</h2>
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
 
-  <div class="contact-info">
+      <div class="contact-info">
+        <div class="contact-item">
+          <img src="/icons/email-icon.png" alt="Email" class="icon-email" />
+          <a href="mailto:shashankmishra413@gmail.com"> Mail Me </a>
+        </div>
 
-    <div class="contact-item">
-      <img src="/icons/email-icon.png" alt="Email" class="icon-email" />
-      <a href="mailto:shashankmishra413@gmail.com">
-        Mail Me
-      </a>
-    </div>
+        <div class="contact-item">
+          <img src="/icons/linkedin-icon.png" alt="LinkedIn" />
+          <a
+            href="https://www.linkedin.com/in/shashankmishra023"
+            target="_blank"
+          >
+            Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
 
-    <div class="contact-item">
-      <img src="/icons/linkedin-icon.png" alt="LinkedIn" />
-      <a href="https://www.linkedin.com/in/shashankmishra023" target="_blank">
-        Connect on LinkedIn
-      </a>
-    </div>
-
-  </div>
-</section>
-
-
-  <footer>
-    &copy; 2025 Shashank Mishra. All rights reserved.
-  </footer>
-  <script src="main.js" defer></script>
-</body>
+    <footer>&copy; 2025 Shashank Mishra. All rights reserved.</footer>
+    <script src="main.js" defer></script>
+  </body>
 </html>
