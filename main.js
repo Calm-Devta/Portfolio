@@ -109,7 +109,7 @@ if (!canvas) {
     observer.observe(section);
   });
 
-  // sidebar click scroll (you were missing this)
+  // sidebar click scroll
   document.querySelectorAll(".dot").forEach((dot) => {
     dot.addEventListener("click", () => {
       const target = document.getElementById(dot.dataset.target);
